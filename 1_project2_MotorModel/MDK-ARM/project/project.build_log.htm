@@ -1,0 +1,212 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: qwe FAPG6, qwe, LIC=ZB4EI-T7PUJ-BSSYX-HLYDP-FQ86C-S60JW
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  D:\1_A_file_with_sth\Keil_v5_\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.16.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\1_1_everything\Embeded\DMCode\zjh_DM_Code\project2\MDK-ARM\project.uvprojx
+Project File Date:  09/08/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'D:\1_A_file_with_sth\Keil_v5_\ARM\ARMCLANG\Bin'
+Build target 'project'
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(76): warning: '__INLINE' macro redefined [-Wmacro-redefined]
+   76 |   #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+      |           ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(41): note: previous definition is here
+   41 |   #define __INLINE                               __inline
+      |           ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(77): warning: '__STATIC_INLINE' macro redefined [-Wmacro-redefined]
+   77 |   #define __STATIC_INLINE  static inline
+      |           ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(44): note: previous definition is here
+   44 |   #define __STATIC_INLINE                        static __inline
+      |           ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(196): error: redefinition of '__enable_irq'
+  196 | __STATIC_FORCEINLINE void __enable_irq(void)
+      |                           ^
+D:\1_A_file_with_sth\Keil_v5_\ARM\ARMCLANG\Bin\..\include\arm_compat.h(113): note: previous definition is here
+  113 | __enable_irq(void) {
+      | ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(207): error: conflicting types for '__disable_irq'
+  207 | __STATIC_FORCEINLINE void __disable_irq(void)
+      |                           ^
+D:\1_A_file_with_sth\Keil_v5_\ARM\ARMCLANG\Bin\..\include\arm_compat.h(66): note: previous definition is here
+   66 | __disable_irq(void) {
+      | ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(218): error: redefinition of '__get_CONTROL'
+  218 | __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
+      |                               ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(166): note: previous definition is here
+  166 | __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
+      |                               ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(248): error: redefinition of '__set_CONTROL'
+  248 | __STATIC_FORCEINLINE void __set_CONTROL(uint32_t control)
+      |                           ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(196): note: previous definition is here
+  196 | __STATIC_FORCEINLINE void __set_CONTROL(uint32_t control)
+      |                           ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(272): error: redefinition of '__get_IPSR'
+  272 | __STATIC_FORCEINLINE uint32_t __get_IPSR(void)
+      |                               ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(220): note: previous definition is here
+  220 | __STATIC_FORCEINLINE uint32_t __get_IPSR(void)
+      |                               ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(286): error: redefinition of '__get_APSR'
+  286 | __STATIC_FORCEINLINE uint32_t __get_APSR(void)
+      |                               ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(234): note: previous definition is here
+  234 | __STATIC_FORCEINLINE uint32_t __get_APSR(void)
+      |                               ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(300): error: redefinition of '__get_xPSR'
+  300 | __STATIC_FORCEINLINE uint32_t __get_xPSR(void)
+      |                               ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(248): note: previous definition is here
+  248 | __STATIC_FORCEINLINE uint32_t __get_xPSR(void)
+      |                               ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(314): error: redefinition of '__get_PSP'
+  314 | __STATIC_FORCEINLINE uint32_t __get_PSP(void)
+      |                               ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(262): note: previous definition is here
+  262 | __STATIC_FORCEINLINE uint32_t __get_PSP(void)
+      |                               ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(344): error: redefinition of '__set_PSP'
+  344 | __STATIC_FORCEINLINE void __set_PSP(uint32_t topOfProcStack)
+      |                           ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(292): note: previous definition is here
+  292 | __STATIC_FORCEINLINE void __set_PSP(uint32_t topOfProcStack)
+      |                           ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(368): error: redefinition of '__get_MSP'
+  368 | __STATIC_FORCEINLINE uint32_t __get_MSP(void)
+      |                               ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(316): note: previous definition is here
+  316 | __STATIC_FORCEINLINE uint32_t __get_MSP(void)
+      |                               ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(398): error: redefinition of '__set_MSP'
+  398 | __STATIC_FORCEINLINE void __set_MSP(uint32_t topOfMainStack)
+      |                           ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(346): note: previous definition is here
+  346 | __STATIC_FORCEINLINE void __set_MSP(uint32_t topOfMainStack)
+      |                           ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(449): error: redefinition of '__get_PRIMASK'
+  449 | __STATIC_FORCEINLINE uint32_t __get_PRIMASK(void)
+      |                               ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(397): note: previous definition is here
+  397 | __STATIC_FORCEINLINE uint32_t __get_PRIMASK(void)
+      |                               ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(479): error: redefinition of '__set_PRIMASK'
+  479 | __STATIC_FORCEINLINE void __set_PRIMASK(uint32_t priMask)
+      |                           ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(427): note: previous definition is here
+  427 | __STATIC_FORCEINLINE void __set_PRIMASK(uint32_t priMask)
+      |                           ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(506): error: redefinition of '__enable_fiq'
+  506 | __STATIC_FORCEINLINE void __enable_fault_irq(void)
+      |                           ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(454): note: expanded from macro '__enable_fault_irq'
+  454 | #define __enable_fault_irq                __enable_fiq   /* see arm_compat.h */
+      |                                           ^
+D:\1_A_file_with_sth\Keil_v5_\ARM\ARMCLANG\Bin\..\include\arm_compat.h(98): note: previous definition is here
+   98 | __enable_fiq(void) {
+      | ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(517): error: conflicting types for '__disable_fiq'
+  517 | __STATIC_FORCEINLINE void __disable_fault_irq(void)
+      |                           ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(462): note: expanded from macro '__disable_fault_irq'
+  462 | #define __disable_fault_irq               __disable_fiq   /* see arm_compat.h */
+      |                                           ^
+D:\1_A_file_with_sth\Keil_v5_\ARM\ARMCLANG\Bin\..\include\arm_compat.h(41): note: previous definition is here
+   41 | __disable_fiq(void) {
+      | ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(528): error: redefinition of '__get_BASEPRI'
+  528 | __STATIC_FORCEINLINE uint32_t __get_BASEPRI(void)
+      |                               ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(470): note: previous definition is here
+  470 | __STATIC_FORCEINLINE uint32_t __get_BASEPRI(void)
+      |                               ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(558): error: redefinition of '__set_BASEPRI'
+  558 | __STATIC_FORCEINLINE void __set_BASEPRI(uint32_t basePri)
+      |                           ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(500): note: previous definition is here
+  500 | __STATIC_FORCEINLINE void __set_BASEPRI(uint32_t basePri)
+      |                           ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(583): error: redefinition of '__set_BASEPRI_MAX'
+  583 | __STATIC_FORCEINLINE void __set_BASEPRI_MAX(uint32_t basePri)
+      |                           ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(525): note: previous definition is here
+  525 | __STATIC_FORCEINLINE void __set_BASEPRI_MAX(uint32_t basePri)
+      |                           ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(79): warning: In file included from...
+../Drivers/CMSIS/Include\cmsis_gcc.h(594): error: redefinition of '__get_FAULTMASK'
+  594 | __STATIC_FORCEINLINE uint32_t __get_FAULTMASK(void)
+      |                               ^
+../Drivers/CMSIS/Include\cmsis_armclang.h(536): note: previous definition is here
+  536 | __STATIC_FORCEINLINE uint32_t __get_FAULTMASK(void)
+      |                               ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+2 warnings and 20 errors generated.
+compiling cmsis_os.c...
+"project\project.axf" - 19 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32H7xx_DFP.3.1.1.pack
+                Keil::STM32H7xx_DFP@3.1.1
+                STMicroelectronics STM32H7 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_project
+  D:/1_A_file_with_sth/Keil_v5_/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/1_A_file_with_sth/Keil_v5_/Packs/Keil/STM32H7xx_DFP/3.1.1/Drivers/CMSIS/Device/ST/STM32H7xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
